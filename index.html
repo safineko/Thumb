@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerador de Thumb Polêmica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gerador de Thumb Polêmica</h1>
+
+    <label for="imageInput" class="btn">Escolher imagem</label>
+    <input type="file" id="imageInput" accept="image/*" hidden />
+
+    <textarea id="textInput" placeholder="Escreva o texto da sua thumb aqui..."></textarea>
+
+    <button id="generateBtn" class="btn">Gerar Thumbnail</button>
+
+    <canvas id="thumbCanvas" width="640" height="360"></canvas>
+
+    <div id="commentsContainer">
+      <h2>Comentários Polêmicos</h2>
+      <ul id="commentsList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
